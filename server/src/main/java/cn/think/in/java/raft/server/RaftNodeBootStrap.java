@@ -39,9 +39,10 @@ public class RaftNodeBootStrap {
     public static final String[] DEFAULT_PROCESS = new String[]{"localhost:8775", "localhost:8776", "localhost:8777", "localhost:8778", "localhost:8779"};
 
     public static void main(String[] args) throws Throwable {
+        System.out.println(System.getProperty("serverPort"));
         boot();
     }
-    
+
     public static void boot() throws Throwable {
         String property = System.getProperty(CLUSTER_ADDR_LIST);
         String[] peerAddr;

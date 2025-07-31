@@ -16,8 +16,7 @@ limitations under the License.
  */
 package cn.think.in.java.raft.common.entity;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 import lombok.ToString;
 
 import java.io.Serializable;
@@ -26,9 +25,9 @@ import java.io.Serializable;
  *
  * @author 莫那·鲁道
  */
-@Getter
-@Setter
+
 @ToString
+@Data
 public class ClientKVAck implements Serializable {
 
     Object result;

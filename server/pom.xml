@@ -30,9 +30,14 @@
             <artifactId>slf4j-api</artifactId>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>org.slf4j</groupId>-->
+<!--            <artifactId>slf4j-log4j12</artifactId>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
+            <artifactId>slf4j-simple</artifactId>
         </dependency>
 
 
@@ -77,10 +82,6 @@
             <artifactId>hessian</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>redis.clients</groupId>
-            <artifactId>jedis</artifactId>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.rocksdb/rocksdbjni
          http://172.20.61.182:18326/admin/browse.jsp?JMSDestination=Consumer.foot_stone_test.VirtualTopic.foot_stone_flow_change

@@ -17,21 +17,25 @@ limitations under the License.
 package cn.think.in.java.raft.common.rpc;
 
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.io.Serializable;
 
 /**
  *
  * @author 莫那·鲁道
  */
-@Getter
-@Setter
+
 public class Response<T> implements Serializable {
 
 
     private T result;
+
+    public T getResult() {
+        return result;
+    }
+
+    public void setResult(T result) {
+        this.result = result;
+    }
 
     public Response(T result) {
         this.result = result;

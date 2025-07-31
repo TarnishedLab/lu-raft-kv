@@ -18,17 +18,19 @@ package cn.think.in.java.raft.common.rpc;
 
 import cn.think.in.java.raft.common.RaftRemotingException;
 import com.alipay.remoting.exception.RemotingException;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.TimeUnit;
 
 /**
  * @author 莫那·鲁道
  */
-@Slf4j
+
 public class DefaultRpcClient implements RpcClient {
 
     private final static com.alipay.remoting.rpc.RpcClient CLIENT = new com.alipay.remoting.rpc.RpcClient();
+    private static final Logger log = LoggerFactory.getLogger(DefaultRpcClient.class);
 
     @Override
     public <R> R send(Request request) {

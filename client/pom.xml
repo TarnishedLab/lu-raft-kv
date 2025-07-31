@@ -9,7 +9,7 @@
         <version>1.0-RELEASE</version>
     </parent>
 
-    <groupId>org.example</groupId>
+
     <artifactId>client</artifactId>
 
     <properties>
@@ -24,9 +24,14 @@
             <artifactId>slf4j-api</artifactId>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>org.slf4j</groupId>-->
+<!--            <artifactId>slf4j-log4j12</artifactId>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
+            <artifactId>slf4j-simple</artifactId>
         </dependency>
 
         <dependency>

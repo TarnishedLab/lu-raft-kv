@@ -17,7 +17,6 @@ limitations under the License.
 package cn.think.in.java.raft.common.rpc;
 
 import lombok.Builder;
-import lombok.Data;
 
 import java.io.Serializable;
 
@@ -25,7 +24,6 @@ import java.io.Serializable;
  * @author 莫那·鲁道
  */
 @Builder
-@Data
 public class Request implements Serializable {
 
     /** 请求投票 */
@@ -48,6 +46,30 @@ public class Request implements Serializable {
     private Object obj;
 
     private String url;
+
+    public int getCmd() {
+        return cmd;
+    }
+
+    public void setCmd(int cmd) {
+        this.cmd = cmd;
+    }
+
+    public Object getObj() {
+        return obj;
+    }
+
+    public void setObj(Object obj) {
+        this.obj = obj;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
     public Request() {
     }

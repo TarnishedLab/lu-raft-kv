@@ -30,7 +30,7 @@ public class DefaultStateMachineDataTest {
     // 节点端口列表，根据实际情况修改
     @Parameterized.Parameters(name = "节点端口: {0}")
     public static Collection<Integer> nodePorts() {
-        return Arrays.asList(8775, 8776, 8777, 8778, 8779);
+        return Arrays.asList(8775, 8776, 8777, 8778, 8779,8780);
     }
 
     // 当前测试的节点端口
